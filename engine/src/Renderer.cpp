@@ -7,9 +7,9 @@ void Renderer::init()
     resize(960, 540);
 }
 
-void Renderer::clear(float r, float g, float b)
+void Renderer::clear(float r, float g, float b, float a)
 {
-    glClearColor(r, g, b, 1.0f);
+    glClearColor(r, g, b, a);
     glClear(GL_COLOR_BUFFER_BIT);
 }
 
