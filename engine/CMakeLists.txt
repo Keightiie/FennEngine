@@ -21,6 +21,7 @@ add_library(imgui STATIC
         ../external/imgui/imgui_tables.cpp
         ../external/imgui/imgui_widgets.cpp
 
+        ../external/imgui/backends/imgui_impl_glfw.cpp
         ../external/imgui/backends/imgui_impl_opengl3.cpp
 )
 
@@ -29,6 +30,9 @@ target_include_directories(imgui PUBLIC
         ../external/imgui/backends
 )
 
+target_link_libraries(imgui PUBLIC
+        glfw
+)
 
 target_link_libraries(FennEngine PUBLIC
         glfw

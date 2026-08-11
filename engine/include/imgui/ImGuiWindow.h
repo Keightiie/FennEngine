@@ -3,7 +3,7 @@
 
 class ImGuiWindow {
 public:
-    virtual void draw() {};
+    virtual void draw();;
 
 };
 #endif //IMGUIWINDOW_H
